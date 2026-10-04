@@ -23,6 +23,8 @@ namespace mf_dev_backend.Models
         [Display(Name = "Ano do modelo")]
         public int AnoModelo { get; set; }
 
+        public ICollection<Consumo> Consumos { get; set; } //relacionamento com a tabela de consumo
+
 
     }
 }
